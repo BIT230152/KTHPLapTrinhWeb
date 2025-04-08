@@ -29,42 +29,41 @@
         <div class="card-body">
             <div class="text-center mb-4">
                 <i class="fas fa-warehouse"></i>
-                <h2 class="text-primary">Create Your Account</h2>
-                <p class="text-muted">Join us and start your journey</p>
+                <h2 class="text-primary">Tạo tài khooản</h2>
             </div>
             <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
                 <div asp-validation-summary="All" class="text-danger"></div>
                 <div class="mb-3">
-                    <label asp-for="Input.Email" class="form-label">Email Address</label>
-                    <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="Enter your email" />
+                    <label asp-for="Input.Email" class="form-label">Địa chỉ email</label>
+                    <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="Nhập địa chỉ email của bạn" />
                     <span asp-validation-for="Input.Email" class="text-danger"></span>
                 </div>
                 <div class="mb-3">
-                    <label asp-for="Input.Password" class="form-label">Password</label>
-                    <input asp-for="Input.Password" type="password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Enter your password" />
+                    <label asp-for="Input.Password" class="form-label">Mật khẩu</label>
+                    <input asp-for="Input.Password" type="password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Nhập mật khẩu của bạn" />
                     <span asp-validation-for="Input.Password" class="text-danger"></span>
                 </div>
                 <div class="mb-3">
-                    <label asp-for="Input.ConfirmPassword" class="form-label">Confirm Password</label>
-                    <input asp-for="Input.ConfirmPassword" type="password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Confirm your password" />
+                    <label asp-for="Input.ConfirmPassword" class="form-label">Xác nhận mật khẩu</label>
+                    <input asp-for="Input.ConfirmPassword" type="password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Xác nhận mật khẩu của bạn" />
                     <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
                 </div>
                 <div class="d-grid gap-2">
-                    <button type="submit" class="btn btn-primary btn-block">Register</button>
+                    <button type="submit" class="btn btn-primary btn-block">Đăng ký</button>
                 </div>
                 <div class="text-center mt-3">
-                    <p class="text-muted">Already have an account? <a asp-page="./Login" class="text-decoration-none text-primary">Sign in</a></p>
+                    <p class="text-muted">Bạn đã có tài khoản? <a asp-page="./Login" class="text-decoration-none text-primary">Đăng nhập</a></p>
                 </div>
             </form>
 
             <!-- Phần đăng ký bằng Google -->
             <hr class="my-4">
             <div class="text-center">
-                <p class="text-muted">Or sign up with</p>
+                <p class="text-muted">Hoặc đăng ký bằng</p>
                 <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post">
                     <div class="d-grid gap-2">
                         <button type="submit" class="btn btn-google" name="provider" value="Google" title="Sign up using your Google account">
-                            <i class="fab fa-google"></i> Sign up with Google
+                            <i class="fab fa-google"></i> Đăng nhập bằng Google
                         </button>
                     </div>
                 </form>

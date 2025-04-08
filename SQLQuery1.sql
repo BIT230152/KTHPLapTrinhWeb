@@ -12,8 +12,6 @@ VALUES
     (NEWID(), N'Camera'),
     (NEWID(), N'Monitor'),
     (NEWID(), N'Mouse');
-
-
 	--------------------------------------[ PRODUCTS ]--------------------------------------------------------------------------
 -- Khai báo các biến dùng chung cho sản phẩm
 DECLARE @BaseCost DECIMAL(18,2) = 100.00;

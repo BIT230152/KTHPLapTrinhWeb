@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\ASUS\\Downloads\\KTHPLapTrinhWeb\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{07E69BC3-FCE7-44BD-8358-A7646EFA918E}|WAREHOUSE MANAGEMENT SYSTEM\\WAREHOUSE MANAGEMENT SYSTEM.csproj|c:\\users\\asus\\downloads\\kthplaptrinhweb\\warehouse management system\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{07E69BC3-FCE7-44BD-8358-A7646EFA918E}|WAREHOUSE MANAGEMENT SYSTEM\\WAREHOUSE MANAGEMENT SYSTEM.csproj|solutionrelative:warehouse management system\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07E69BC3-FCE7-44BD-8358-A7646EFA918E}|WAREHOUSE MANAGEMENT SYSTEM\\WAREHOUSE MANAGEMENT SYSTEM.csproj|c:\\users\\asus\\downloads\\kthplaptrinhweb\\warehouse management system\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{07E69BC3-FCE7-44BD-8358-A7646EFA918E}|WAREHOUSE MANAGEMENT SYSTEM\\WAREHOUSE MANAGEMENT SYSTEM.csproj|solutionrelative:warehouse management system\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07E69BC3-FCE7-44BD-8358-A7646EFA918E}|WAREHOUSE MANAGEMENT SYSTEM\\WAREHOUSE MANAGEMENT SYSTEM.csproj|c:\\users\\asus\\downloads\\kthplaptrinhweb\\warehouse management system\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{07E69BC3-FCE7-44BD-8358-A7646EFA918E}|WAREHOUSE MANAGEMENT SYSTEM\\WAREHOUSE MANAGEMENT SYSTEM.csproj|solutionrelative:warehouse management system\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{07E69BC3-FCE7-44BD-8358-A7646EFA918E}|WAREHOUSE MANAGEMENT SYSTEM\\WAREHOUSE MANAGEMENT SYSTEM.csproj|c:\\users\\asus\\downloads\\kthplaptrinhweb\\warehouse management system\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07E69BC3-FCE7-44BD-8358-A7646EFA918E}|WAREHOUSE MANAGEMENT SYSTEM\\WAREHOUSE MANAGEMENT SYSTEM.csproj|solutionrelative:warehouse management system\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,7 +54,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Downloads\\KTHPLapTrinhWeb\\WAREHOUSE MANAGEMENT SYSTEM\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "WAREHOUSE MANAGEMENT SYSTEM\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Downloads\\KTHPLapTrinhWeb\\WAREHOUSE MANAGEMENT SYSTEM\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "WAREHOUSE MANAGEMENT SYSTEM\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAD4AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-08T16:07:44.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Logout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Downloads\\KTHPLapTrinhWeb\\WAREHOUSE MANAGEMENT SYSTEM\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "RelativeDocumentMoniker": "WAREHOUSE MANAGEMENT SYSTEM\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Downloads\\KTHPLapTrinhWeb\\WAREHOUSE MANAGEMENT SYSTEM\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "RelativeToolTip": "WAREHOUSE MANAGEMENT SYSTEM\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-08T16:07:37.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Downloads\\KTHPLapTrinhWeb\\WAREHOUSE MANAGEMENT SYSTEM\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "WAREHOUSE MANAGEMENT SYSTEM\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Downloads\\KTHPLapTrinhWeb\\WAREHOUSE MANAGEMENT SYSTEM\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "WAREHOUSE MANAGEMENT SYSTEM\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEUAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-08T16:06:55.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "InventoryHistory.txt",
               "DocumentMoniker": "C:\\Users\\ASUS\\Downloads\\KTHPLapTrinhWeb\\WAREHOUSE MANAGEMENT SYSTEM\\Logs\\InventoryHistory.txt",
               "RelativeDocumentMoniker": "WAREHOUSE MANAGEMENT SYSTEM\\Logs\\InventoryHistory.txt",
@@ -50,12 +101,11 @@
               "RelativeToolTip": "WAREHOUSE MANAGEMENT SYSTEM\\Logs\\InventoryHistory.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-04-08T15:04:16.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T15:04:16.181Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "HistoryLog.txt",
               "DocumentMoniker": "C:\\Users\\ASUS\\Downloads\\KTHPLapTrinhWeb\\WAREHOUSE MANAGEMENT SYSTEM\\Logs\\HistoryLog.txt",
               "RelativeDocumentMoniker": "WAREHOUSE MANAGEMENT SYSTEM\\Logs\\HistoryLog.txt",
@@ -63,12 +113,11 @@
               "RelativeToolTip": "WAREHOUSE MANAGEMENT SYSTEM\\Logs\\HistoryLog.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-04-08T15:04:12.046Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T15:04:12.046Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Downloads\\KTHPLapTrinhWeb\\WAREHOUSE MANAGEMENT SYSTEM\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "WAREHOUSE MANAGEMENT SYSTEM\\Controllers\\ProductsController.cs",
@@ -81,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\ASUS\\Downloads\\KTHPLapTrinhWeb\\WAREHOUSE MANAGEMENT SYSTEM\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "WAREHOUSE MANAGEMENT SYSTEM\\Views\\Shared\\_Layout.cshtml",
@@ -89,8 +138,7 @@
               "RelativeToolTip": "WAREHOUSE MANAGEMENT SYSTEM\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAO4AAAAAAAAAAAAAAPoAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-08T15:00:47.98Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T15:00:47.98Z"
             }
           ]
         },
