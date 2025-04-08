@@ -16,6 +16,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Authentication.Facebook;
+using WAREHOUSE_MANAGEMENT_SYSTEM.AI_model;
 
 namespace WAREHOUSE_MANAGEMENT_SYSTEM
 {
@@ -31,6 +32,9 @@ namespace WAREHOUSE_MANAGEMENT_SYSTEM
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddHttpClient<FlaskApiService>();
+            services.AddRazorPages();
+            services.AddControllersWithViews();
 
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
@@ -39,7 +43,7 @@ namespace WAREHOUSE_MANAGEMENT_SYSTEM
 
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-            services.AddControllersWithViews();
+            
 
          
             services.AddAuthentication()
@@ -53,11 +57,27 @@ namespace WAREHOUSE_MANAGEMENT_SYSTEM
                         googleOptions.ClientSecret = googleAuthNSection["ClientSecret"];
                         // Cấu hình Url callback lại từ Google (không thiết lập thì mặc định là /signin-google)
                         googleOptions.CallbackPath = "/dang-nhap-tu-google";
+                        googleOptions.Events.OnRedirectToAuthorizationEndpoint = context =>
+                        {
+                            // Thay đổi đường dẫn redirect về trang đăng nhập của ứng dụng
+                            context.Response.Redirect(context.RedirectUri + "&prompt=select_account");
+                            return System.Threading.Tasks.Task.CompletedTask;
+                        };
 
 
                     });
 
-            services.AddRazorPages();
+            // Thêm CORS
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll",
+                    builder =>
+                    {
+                        builder.AllowAnyOrigin()
+                               .AllowAnyMethod()
+                               .AllowAnyHeader();
+                    });
+            });
 
         }
 
@@ -79,6 +99,9 @@ namespace WAREHOUSE_MANAGEMENT_SYSTEM
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            // Thêm CORS middleware
+            app.UseCors("AllowAll");
 
             app.UseAuthentication(); // Phục hồi thông tin đăng nhập (xác thực)
             app.UseAuthorization(); // Phục hồi thông tinn về quyền của User

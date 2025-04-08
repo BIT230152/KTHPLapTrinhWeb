@@ -12,19 +12,14 @@ using WAREHOUSE_MANAGEMENT_SYSTEM.Models;
 using WAREHOUSE_MANAGEMENT_SYSTEM.Services;
 using System.IO;
 
+
 namespace WAREHOUSE_MANAGEMENT_SYSTEM.Controllers
 {
     public class ProductsController : Controller
     {
         private readonly ApplicationDbContext _context;
         
-
-        public ProductsController(ApplicationDbContext context)
-        {
-            _context = context;
-        }
-
-       
+        //------------------------------------ Lịch sử ---------------------------------------------
         private static readonly string logFilePath = "Logs/HistoryLog.txt";
 
         // Action để hiển thị lịch sử
@@ -71,46 +66,7 @@ namespace WAREHOUSE_MANAGEMENT_SYSTEM.Controllers
             return View(movements);
         }
 
-
-        // GET: Products
-        [Authorize]
-        /* public async Task<IActionResult> Index(string sortOrder, int pg = 1)
-         {
-             var applicationDbContext = _context.Products.Include(p => p.Category);
-
-
-             var products = _context.Products.ToList();
-             var categories = _context.Products.AsQueryable();
-
-             ViewData["NameOrder"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
-             switch (sortOrder)
-             {
-                 case "name_desc":
-                     categories = categories.OrderByDescending(a => a.Category);
-                     break;
-                 default:
-                     categories = categories.OrderBy(a => a.Category);
-                     break;
-             }
-             const int pageSize = 5;
-             if (pg < 1)
-                 pg = 1;
-
-             int recsCount = products.Count();
-
-             var pager = new Pager(recsCount, pg, pageSize);
-
-             int recSkip = (pg - 1) * pageSize;
-
-             var data = applicationDbContext.Skip(recSkip).Take(pager.PageSize).ToList();
-
-             this.ViewBag.Pager = pager;
-
-             //return View(products);
-             return View(data);
-
-            // return View(await applicationDbContext.ToListAsync());
-         }*/
+       
         public async Task<IActionResult> Index(string sortOrder, int pg = 1)
         {
             var products = _context.Products.AsQueryable();

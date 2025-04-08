@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/flatly/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <style>
         :root {
@@ -246,6 +248,7 @@
                                     <i class="fas fa-home"></i> Trang chủ
                                 </a>
                             </li>
+                            
                             <li class="nav-item">
                                 <a class="nav-link" asp-controller="Categories" asp-action="Index">
                                     <i class="fas fa-tags"></i> Phân loại
@@ -257,25 +260,33 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" asp-controller="Products" asp-action="SearchForm">
-                                    <i class="fas fa-search"></i> Tìm kiếm
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-controller="Products" asp-action="History">
-                                    <i class="fas fa-history"></i> Lịch sử
-                                </a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" asp-controller="StockMovements" asp-action="Index">
                                     <i class="fas fa-exchange-alt"></i> Giao dịch kho
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" asp-controller="Products" asp-action="InventoryHistory">
-                                    <i class="fas fa-clipboard-list"></i> Lịch sử kho
+                                <a class="nav-link" asp-controller="Products" asp-action="SearchForm">
+                                    <i class="fas fa-search"></i> Tìm kiếm
                                 </a>
                             </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="historyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-history"></i> Lịch sử
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="historyDropdown">
+                                    <li>
+                                        <a class="dropdown-item" asp-controller="Products" asp-action="History">
+                                            <i class="fas fa-clock"></i> Lịch sử hoạt động
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" asp-controller="Products" asp-action="InventoryHistory">
+                                            <i class="fas fa-clipboard-list"></i> Lịch sử kho
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            
                         </ul>
                         <partial name="_LoginPartial" />
                     }
@@ -310,6 +321,47 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdownToggle = document.querySelector('#historyDropdown');
+            const dropdownMenu = dropdownToggle.nextElementSibling;
+            let isOpen = false;
+
+            // Xử lý click vào nút dropdown
+            dropdownToggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                if (isOpen) {
+                    dropdownMenu.classList.remove('show');
+                    dropdownToggle.setAttribute('aria-expanded', 'false');
+                } else {
+                    dropdownMenu.classList.add('show');
+                    dropdownToggle.setAttribute('aria-expanded', 'true');
+                }
+                isOpen = !isOpen;
+            });
+
+            // Đóng dropdown khi click ra ngoài
+            document.addEventListener('click', function(e) {
+                if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove('show');
+                    dropdownToggle.setAttribute('aria-expanded', 'false');
+                    isOpen = false;
+                }
+            });
+
+            // Đóng dropdown khi click vào item
+            const dropdownItems = dropdownMenu.querySelectorAll('.dropdown-item');
+            dropdownItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    dropdownMenu.classList.remove('show');
+                    dropdownToggle.setAttribute('aria-expanded', 'false');
+                    isOpen = false;
+                });
+            });
+        });
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

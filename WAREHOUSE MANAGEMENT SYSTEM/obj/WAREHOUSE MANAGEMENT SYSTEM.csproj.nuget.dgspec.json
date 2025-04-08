@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Downloads\\WEB\\WAREHOUSE MANAGEMENT SYSTEM\\WAREHOUSE MANAGEMENT SYSTEM.csproj": {}
+    "C:\\Users\\ASUS\\Downloads\\KTHPLapTrinhWeb\\WAREHOUSE MANAGEMENT SYSTEM\\WAREHOUSE MANAGEMENT SYSTEM.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Downloads\\WEB\\WAREHOUSE MANAGEMENT SYSTEM\\WAREHOUSE MANAGEMENT SYSTEM.csproj": {
+    "C:\\Users\\ASUS\\Downloads\\KTHPLapTrinhWeb\\WAREHOUSE MANAGEMENT SYSTEM\\WAREHOUSE MANAGEMENT SYSTEM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Downloads\\WEB\\WAREHOUSE MANAGEMENT SYSTEM\\WAREHOUSE MANAGEMENT SYSTEM.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Downloads\\KTHPLapTrinhWeb\\WAREHOUSE MANAGEMENT SYSTEM\\WAREHOUSE MANAGEMENT SYSTEM.csproj",
         "projectName": "WAREHOUSE MANAGEMENT SYSTEM",
-        "projectPath": "C:\\Users\\ASUS\\Downloads\\WEB\\WAREHOUSE MANAGEMENT SYSTEM\\WAREHOUSE MANAGEMENT SYSTEM.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Downloads\\KTHPLapTrinhWeb\\WAREHOUSE MANAGEMENT SYSTEM\\WAREHOUSE MANAGEMENT SYSTEM.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Downloads\\WEB\\WAREHOUSE MANAGEMENT SYSTEM\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Downloads\\KTHPLapTrinhWeb\\WAREHOUSE MANAGEMENT SYSTEM\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HowLPWd5JWQ=",
+  "dgSpecHash": "A7kkGHwX7TE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\Downloads\\WEB\\WAREHOUSE MANAGEMENT SYSTEM\\WAREHOUSE MANAGEMENT SYSTEM.csproj",
+  "projectFilePath": "C:\\Users\\ASUS\\Downloads\\KTHPLapTrinhWeb\\WAREHOUSE MANAGEMENT SYSTEM\\WAREHOUSE MANAGEMENT SYSTEM.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\asyncio\\0.1.69\\asyncio.0.1.69.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

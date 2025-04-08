@@ -26,6 +26,12 @@ namespace WAREHOUSE_MANAGEMENT_SYSTEM.Controllers
         }
 
         [Authorize]
+        public IActionResult Data_Analysis()
+        {
+            return View();
+        }
+
+        [Authorize]
         public IActionResult Privacy()
         {
             return View();
